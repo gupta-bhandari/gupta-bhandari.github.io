@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="profile_photo.jpg" alt="Gupta Bahadur Bhandari" class="profile-photo">
+            <p>Hi, I’m <span class="highlight-name">Gupta Bahaur Bhandari</span>, an aspiring Data Scientist eager to leverage my skills in statistical analysis and machine learning to solve real-world problems. 
+                With a strong foundation in data analysis and a passion for uncovering insights, I am committed to learning and growing in the field of data science.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Semantic Search Engine for Laptop Recommendations</h3>
+                <p>This project implements a semantic search engine to recommend laptop products based on user queries. The search engine utilizes BERT and Sentence Transformer models to generate contextual embeddings for the product data and queries. 
+                    The system is designed to retrieve and rank relevant products by calculating cosine similarity between the query and product features. <a href="https://github.com/gupta-bhandari/Semantic_Search">View on GitHub</a></p>
+            </li>
+            <li>
+                <h3>Stock prediction using LSTM</h3>
+                <p>This project is designed to forecast the next day's closing price based on historical data using machine learning techniques, specifically LSTM (Long Short-Term Memory) networks. 
+                    The workflow of the project is divided into five main parts: data cleaning, data preprocessing, data visualization, model building, and model evaluation. Additionally, an interactive Streamlit app is provided for users to make predictions using their input data.
+                    <a href="https://github.com/gupta-bhandari/Stock_prediction_using_LSTM">View on GitHub</a></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>Clustering Network Traffic Data for Anomaly Detection</h3>
+                <p>This project helps in identifying unusual network traffic patterns using clustering techniques, aiming to detect anomalies that could indicate cyber threats or failures. 
+                    The combination of KMeans and DBSCAN ensures both structured and unstructured anomalies are captured.<a href="https://github.com/gupta-bhandari/Clustering_Network_Traffic_Data_for_Anomaly_Detection">View on GitHub</a></p>
+            </li>
+            <li>
+                <h3>Supermarket Sales Data Analysis Using Python and PowerBI</h3>
+                <p>This project involves analyzing supermarket sales data from the file 'supermarket_sales_data.csv' using Python and Power BI. 
+                    Initially, the data was cleaned and preprocessed with Python, followed by the creation of a Power BI dashboard featuring various visualizations to extract insights for further analysis. 
+                    Additionally, a pie chart titled 'Payment Type Distribution' was created on the dashboard by integrating Python code into Power BI. <a href="https://github.com/gupta-bhandari/Supermarket_Sales_Data_Analysis_Using_Python_and_PowerBI">View on GitHub</a></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>Articles Recommendation System Using Non-Negative Matrix Factorization</h3>
+                <p>This project aims to develop a recommendation system for Medium articles using the Non-Negative Matrix Factorization (NMF) technique to group articles with similar topics. 
+                    NMF is a machine learning method utilized for dimensionality reduction and feature extraction in linear algebra and data analysis, often applied in data preprocessing, image processing, and text mining, where data can be represented as non-negative values.
+                    
+                    Prior to implementing NMF, several Natural Language Processing (NLP) steps are implemented, including vectorizing the data using TF-IDF. Additionally, Exploratory Data Analysis (EDA) is conducted before applying machine learning techniques. 
+                    The results will be sorted based on the number of claps (likes) to recommend high-quality articles on similar topics to readers. 
+                    NLP is specifically employed for text analysis and topic modeling, while TF-IDF (Term Frequency-Inverse Document Frequency) provides a numeric representation of words within a document collection in the context of information retrieval and text mining.
+                    <a href="https://github.com/gupta-bhandari/Articles_Recommendation_System_Using_Non_Negative_Matrix_Factorization">View on GitHub</a></p>
+            </li>
+            <li>
+                <h3>Data Analysis using Hive and Hive Query Language</h3>
+                <p>This project shows the implementation of Hive and Hive Query Language(HQL) for analyzing the data.<a href="https://github.com/gupta-bhandari/Data_Analysis_Using_Hive_and_HiveQueryLanguage-HQL-">View on GitHub</a></p>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <h3>Fish Weight Prediction Usinsg Linear Regression</h3>
+                <p>This project uses a simple Linear Regression model to predict the fish's weight, based on various body measurement and species information.<a href="https://github.com/gupta-bhandari/Fish_weight_Prediction_Using_LinearRegressionS">View on GitHub</a></p>
+            </li>
+            <li>
+                <h3>Heart Failure Prediction uisng Logistic Regression</h3>
+                <p>This project uses a simple Logistic Regression Model to predict the possibility of a persoon's death due to heart failure, based on various medical information. 
+                    <a href="https://github.com/gupta-bhandari/heart_failure_prediction_logistic_regression">View on GitHub</a></p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="research">
+        <h2>Research Paper</h2>
+        <div class="paper">
+            <h3>Plant Diseases Detection System Using Deep Learning</h3>
+            <p>
+                Farmers traditionally detect plant diseases by observing spots and yellowing on leaves based on their past experience. 
+                To enhance this process, a technology has been developed that allows farmers to upload images of leaves to receive insights regarding their health and potential solutions if issues are identified. 
+                This project utilizes Convolutional Neural Networks (CNN), a class of artificial neural networks, trained with approximately 4,500 leaf images across four different classes from the PlantVillage dataset. 
+                The images feature single leaves with a homogeneous background, free from extraneous noise such as mud or stones. 
+                Recognizing that real-world images may differ, the YOLO algorithm was employed to identify regions of interest (ROI) and feed these into the CNN model for prediction. 
+                The proposed CNN model consists of 10 layers: 2 sequential layers for data preprocessing and augmentation, 3 convolutional layers, 3 pooling layers, 1 fully connected layer, and 1 output layer utilizing a Softmax activation function. 
+                The dataset was divided with 60% allocated for training, 20% for validation, and 20% for testing the model. After training the model for 60 epochs, it achieved a validation accuracy of 96% and a test accuracy of 93%.
+            </p>
+
+            <p> This research was published in <a href="https://old.kecnepal.com/wp-content/uploads/2022/12/KEC-Conference-Proceeding-2022new.pdf" class="custom-link"> KEC Conference.</a></p>
+            <p><strong>Publication Date:</strong> 2022</p>
+            <a href="https://www.researchgate.net/publication/360239121_Plant_Diseases_Detection_System_Using_Deep_Learning" target="_blank">Read Full Paper</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>Power BI</li>
+            <li>Data Visualization using Matplotlib and Seaborn</li>
+            <li>Machine Learning with scikit-learn</li>
+            <li>Natural Language Processing</li>
+            <li>Sentiment Analysis</li>
+            <li>Deep Learning</li>
+            <li>Git for version control</li>
+            <li>Clustering Algorithms</li>
+            <li>Regression Analysis</li>
+            <li>Feature Engineering and Selection</li>
+            <li>Data Pipeline Development</li>
+            <li>Model Building and evaluation</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via <a href="mailto:bikashbhandari928@gmail.com">email</a> or follow me on <a href="https://www.linkedin.com/in/gupta-bahadur-bhandari-13922a14a/">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Gupta Bahadur Bhandari</p>
+    </footer>
+</body>
+</html>

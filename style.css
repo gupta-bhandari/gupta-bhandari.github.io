@@ -1,0 +1,306 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Sections */
+section {
+    padding: 50px 10px;
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    text-transform: uppercase;
+}
+
+section p, section ul li {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Scroll Padding for Sections */
+html {
+    scroll-padding-top: 90px;
+}
+
+/* About Section */
+#about p {
+    text-align: justify;
+}
+
+/* Styling for Name Highlight */
+.highlight-name {
+    font-size: 1.5em;            /* Make the name larger */
+    font-weight: bold;         /* Make it bold */
+    color: #3498db;          /* Choose a catchy color (blue in this case) */
+    font-family: 'Georgia', serif;  /* Add a distinct font if you like */
+    letter-spacing: 1px;       /* Add some spacing between letters */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.highlight-name:hover {
+    color: #e74c3c;            /* Change color on hover */
+    transform: scale(1.1);     /* Slightly enlarge on hover */
+}
+
+/* About Section Photo Styling */
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center the content */
+    text-align: center; /* Center the text */
+}
+
+.profile-photo {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Keep it square for circular cropping */
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    margin-bottom: 20px; /* Adds space between the image and text */
+}
+
+.profile-photo:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.about-container p {
+    font-size: 1.1em;
+    line-height: 1.8; /* Make the text more readable */
+    max-width: 800px; /* Set a max width for the text */
+}
+
+/* Projects Section */
+#projects ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#projects li {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: justify;
+}
+
+#projects li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#projects li h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #34495e;
+    text-align: justify;
+}
+
+#projects li p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+#projects li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+#projects li a:hover {
+    color: #e74c3c;
+}
+
+/* Research Section */
+#research .paper h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+#research .paper p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#research .paper a {
+    display: inline-block;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#research .paper a.custom-link {
+    display: inline; /* Change to inline to look like text */
+    background-color: transparent; /* Remove background */
+    color: #0000FF; /* Use the parent text color */
+    padding: 0; /* No padding */
+    border-radius: 0; /* No border radius */
+    text-decoration: none; /* No underline */
+    cursor: pointer; 
+}
+
+#research .paper a.custom-link:hover {
+    color: #e74c3c;
+    background-color: transparent; /* Change color on hover */
+}
+
+#research .paper a:hover {
+    background-color: #e74c3c;
+}
+
+/* Skills Section */
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#skills li {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#skills li:hover {
+    background-color: #34495e;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+}
+
+#contact a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact a:hover {
+    color: #e74c3c;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer p a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer p a:hover {
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    #skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
