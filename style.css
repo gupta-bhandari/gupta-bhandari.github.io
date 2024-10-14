@@ -5,8 +5,6 @@
     box-sizing: border-box;
 }
 
-
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -25,10 +23,22 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
 header h1 {
     font-size: 2.5em;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header h1 a:hover {
+    font-size: 40.2px; /* Enlarge text size on hover */
+    color: #ffcc00;
 }
 
 nav ul {
@@ -49,6 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+    font-size: 19.5px;
     color: #ffcc00;
 }
 
@@ -80,7 +91,7 @@ section p, section ul li {
 
 /* Scroll Padding for Sections */
 html {
-    scroll-padding-top: 90px;
+    scroll-padding-top: 100px;
 }
 
 /* About Section */
